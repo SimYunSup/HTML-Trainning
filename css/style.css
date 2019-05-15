@@ -43,15 +43,20 @@ a.developer{
   margin-top:25px;
   margin-bottom:25px;
 }
-.section-registers-comp2{
-  margin-top: 15px;
-  margin-bottom: 15px;
+.section-register-comp2{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .intro{
   margin: 30px;
   padding:20px;
   text-align: center;
   text-decoration: none;
+}
+.intro-underimg {
+  text-decoration-color: gray;
+  font-style:italic;
+  font-size:20px;
 }
 h1.intro-plain{
   font-size:50px;
@@ -62,7 +67,7 @@ p.intro-plain{
 }
 
 .intro-img{
-  max-width: 70%;
+  max-width: 60%;
 
   height: auto;
 }

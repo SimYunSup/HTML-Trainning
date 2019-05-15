@@ -23,16 +23,22 @@
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/Beginner_Trainning1/Introduction.html">Introduction</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost/Beginner_Trainning1/ability.html">ability</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost/Beginner_Trainning1/friendship.html">friendship</a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Profile
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu"><span class="dropdown-item-text">Guset</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfile"><span class="dropdown-item-text">Guest</span>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.php">if you have a account, <strong>Login</strong></a>
-                <a class="dropdown-item" href="register.php">Don't have a account? <strong>Register</strong></a>
+                <a class="dropdown-item" href="login.php">if you have a account, <strong>Sign in</strong></a>
+                <a class="dropdown-item" href="register.php">Don't have a account? <strong>Sign up</strong></a>
               </div>
             </li>
           </ul>
@@ -64,18 +70,34 @@
             ?
           </span>
         </div>
-        <div class="row section-login-comp1">
+        <div class="form-row section-login-comp1">
           <hr class="col-md-5"/>
           <p>OR</p>
           <hr class="col-md-5"/>
         </div>
-        <a class="btn btn-info btn-block section-login-comp2" role="button" href="http://localhost/Beginner_Trainning1/register.php">Sign up</a>
-        <div class="row section-login-comp1">
+        <a class="btn btn-info btn-block section-login-comp2" role="button" href="http://localhost/Beginner_Trainning1/register.php">Sign up with new account</a>
+        <div class="form-row">
           <div class="col-md-6">
             <a class="btn btn-block section-login-comp2" style="background-color:#3b5998; color:#FFFFFF;" role="button" href="#">Sign up with Facebook</a>
           </div>
           <div class="col-md-6">
             <a class="btn btn-block section-login-comp2" style="background-color:#c32f10; color:#FFFFFF;" role="button" href="#">Sign up with Google+</a>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6">
+            <a class="btn btn-block section-login-comp2" style="background-color:#03cf5d; color:#FFFFFF;" role="button" href="#">Sign up with Naver</a>
+          </div>
+          <div class="col-md-6">
+            <a class="btn btn-block section-login-comp2" style="background-color:#fcce00; color:#FFFFFF;" role="button" href="#">Sign up with Kakao</a>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6">
+            <a class="btn btn-block section-login-comp2" style="background-color:#1da1f2; color:#FFFFFF;" role="button" href="#">Sign up with Twitter</a>
+          </div>
+          <div class="col-md-6">
+            <a class="btn btn-block section-login-comp2" style="background-color:#175C8E; color:#FFFFFF;" role="button" href="#">Sign up with Koin</a>
           </div>
         </div>
       </div>

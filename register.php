@@ -23,16 +23,22 @@
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/Beginner_Trainning1/Introduction.html">Introduction</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost/Beginner_Trainning1/ability.html">ability</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost/Beginner_Trainning1/friendship.html">friendship</a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Profile
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu"><span class="dropdown-item-text">Guset</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfile"><span class="dropdown-item-text">Guest</span>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.php">if you have a account, <strong>Login</strong></a>
-                <a class="dropdown-item" href="register.php">Don't have a account? <strong>Register</strong></a>
+                <a class="dropdown-item" href="login.php">if you have a account, <strong>Sign in</strong></a>
+                <a class="dropdown-item" href="register.php">Don't have a account? <strong>Sign up</strong></a>
               </div>
             </li>
           </ul>
@@ -40,16 +46,32 @@
     </nav>
     <div class="container-fluid">
       <div class="section-register">
-        <h1 class="text-center">Sign in World ACE</h1>
-        <div class="row section-register-comp1">
-          <div class="col-md-6">
-            <a class="btn btn-block section-register-comp2" style="background-color:#3b5998; color:#FFFFFF;" role="button" href="#">Sign up with Facebook</a>
+        <h1 class="text-center">Sign up at World ACE</h1>
+          <div class="form-row justify-content-center">
+            <div class="col-md-5">
+              <a class="btn btn-block section-register-comp2" style="background-color:#3b5998; color:#FFFFFF;" role="button" href="#"><span>Sign up with Facebook</span></a>
+            </div>
+            <div class="col-md-5">
+              <a class="btn btn-block section-register-comp2" style="background-color:#db4a39; color:#FFFFFF;" role="button" href="#"><span>Sign up with Google+</span></a>
+            </div>
           </div>
-          <div class="col-md-6">
-            <a class="btn btn-block section-register-comp2" style="background-color:#c32f10; color:#FFFFFF;" role="button" href="#">Sign up with Google+</a>
+          <div class="form-row justify-content-center">
+            <div class="col-md-5">
+              <a class="btn btn-block section-register-comp2" style="background-color:#1EC800; color:#FFFFFF;" role="button" href="#"><span>Sign up with Naver</span></a>
+            </div>
+            <div class="col-md-5">
+              <a class="btn btn-block section-register-comp2" style="background-color:#fcce00; color:#FFFFFF;" role="button" href="#">Sign up with Kakao</a>
+            </div>
           </div>
-        </div>
-        <div class="row section-register-comp1">
+          <div class="form-row justify-content-center">
+            <div class="col-md-5">
+              <a class="btn btn-block section-register-comp2" style="background-color:#1da1f2; color:#FFFFFF;" role="button" href="#">Sign up with Twitter</a>
+            </div>
+            <div class="col-md-5">
+              <a class="btn btn-block section-register-comp2" style="background-color:#175C8E; color:#FFFFFF;" role="button" href="#">Sign up with Koin</a>
+            </div>
+          </div>
+        <div class="form-row section-register-comp1">
           <hr class="col-md-5"/>
           <p>OR</p>
           <hr class="col-md-5"/>
@@ -68,7 +90,7 @@
               <label for="password">Password</label>
               <input type="password" class="form-control pw" id="password" placeholder="Password">
             </div>
-            <div class="form-group col-md-6 section-register-comp2">
+            <div class="form-group col-md-6">
               <label for="confirmpassword">Confirm Password</label>
               <input type="password" class="form-control pw-check" id="password-check" placeholder="Repeat Password">
             </div>
@@ -90,17 +112,17 @@
               </select>
             </div>
           </div>
-          <div class="row section-register-comp2">
-            <hr class="col-md-5"/>
+          <div class="form-row section-register-comp2">
+            <hr class="col-md-4"/>
             <p>Optional</p>
-            <hr class="col-md-5"/>
+            <hr class="col-md-4"/>
           </div>
-          <div class="section-register-comp2 form-row">
+          <div class="form-row">
             <div class="form-group col-md-5">
               <label for="phonenumber">Phone number</label>
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <div class="input-group-text">+81</div>
+                  <div class="input-group-text">+82</div>
                 </div>
                 <input type="text" class="form-control" id="phonenumber" placeholder="Your Phone number">
               </div>
@@ -123,7 +145,8 @@
                 <input type="text" class="form-control" id="student-id" placeholder="ex)2019136077">
               </div>
             </div>
-          <div class="form-row justify-content-center section-register-comp2">
+
+          <div class="form-row justify-content-center section-register-comp1">
             <div class="col-md-3">
               <button type="submit" class="btn btn-block btn-primary signup">Sign in</button>
             </div>
@@ -132,15 +155,6 @@
             </div>
           </div>
         </form>
-        <ul class="row intro-login-comp2">
-          <span>Forgot
-            <a href="?">ID</a>
-            /
-            <a href="#">Password</a>
-            ?
-          </span>
-        </ul>
-
       </div>
     </div>
 
