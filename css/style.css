@@ -10,14 +10,59 @@ a.developer{
   margin-right:30px;
 }
 .section-login{
-  width:500px;
+  width:60%;
   position:relative;
   margin-top:50px;
   margin-bottom:50px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding:30px;
   border:1px solid gray;
+  border-radius:5px;
 }
-#Remembercheckbox {
-  margin-top:10px;
-  margin-bottom:10px;
+.section-register{
+  width:70%;
+  position:relative;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding:30px;
+  border:1px solid gray;
+  border-radius:5px;
+}
+.section-login-comp1 {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.section-login-comp2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section-register-comp1 {
+  margin-top:25px;
+  margin-bottom:25px;
+}
+.section-registers-comp2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.intro{
+  margin: 30px;
+  padding:20px;
+  text-align: center;
+  text-decoration: none;
+}
+h1.intro-plain{
+  font-size:50px;
+}
+p.intro-plain{
+  font-size:30px;
+  margin:20px;
+}
+
+.intro-img{
+  max-width: 70%;
+
+  height: auto;
 }
