@@ -66,6 +66,48 @@
         </div>
     </nav>
 
+    <div class="container-fluid intro">
+      <div class="bd">
+        <div id="indexcarousel1" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#indexcarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#indexcarousel1" data-slide-to="1"></li>
+            <li data-target="#indexcarousel1" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active indexcarousel">
+              <img src="http://localhost/Beginner_Trainning1/img/Wonbeen.png" class="d-block w-100" alt=".">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Who is Choi Won-been?</h2>
+                <p>The World ACE, Choi Won-been</p>
+              </div>
+            </div>
+            <div class="carousel-item indexcarousel">
+              <img src="http://localhost/Beginner_Trainning1/img/ability.jpg" class="d-block w-100" alt="His ability">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>How's his skills?</h2>
+                <p>World Amazed at his skills.</p>
+              </div>
+            </div>
+            <div class="carousel-item indexcarousel">
+              <img src="http://localhost/Beginner_Trainning1/img/friendship.jpg" class="d-block w-100" alt="His friendship">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>How's his friendship?</h2>
+                <p>Worlds know Choi Won-been.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#indexcarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#indexcarousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
 
    <nav class="nav nav-pills justify-content-center developer">

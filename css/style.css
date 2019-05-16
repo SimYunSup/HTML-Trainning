@@ -71,3 +71,14 @@ p.intro-plain{
 
   height: auto;
 }
+.indexcarousel{
+  max-height:300px;
+  overflow:hidden;
+}
+.carousel-caption h2{
+  text-decoration-color:black;
+}
+.indexcarousel img{
+  max-height:initial;
+  margin-top:-15%;
+}
