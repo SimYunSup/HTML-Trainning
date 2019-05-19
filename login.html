@@ -12,8 +12,8 @@
     <title>CSS Training.Sign In</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="http://localhost/Beginner_Trainning1/index.php">World ACE</a>
+    <nav class="navbar navbar-expand-lg navbar-light NavbarBar">
+        <a class="navbar-brand" href="http://localhost/Beginner_Trainning1/index.html">World ACE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,30 +37,34 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfile"><span class="dropdown-item-text">Guest</span>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.php">if you have a account, <strong>Sign in</strong></a>
-                <a class="dropdown-item" href="register.php">Don't have a account? <strong>Sign up</strong></a>
+                <a class="dropdown-item" href="#">if you have a account, <strong>Sign in</strong></a>
+                <a class="dropdown-item" href="register.html">Don't have a account? <strong>Sign up</strong></a>
               </div>
             </li>
           </ul>
         </div>
     </nav>
 
-
-    
     <div class="container-fluid">
-      <div class="section-login">
+      <div class="section-login col-xl-6 offset-xl-3 col-md-8 offset-md-2 col-sm-12">
         <h1 class="text-center">Sign in World ACE</h1>
-        <form class="section-login-comp1" action="process.php" method="post">
+        <form class="section-login-comp1 needs-validation" action="#" method="post">
           <div class="section-login-comp2 form-row">
-            <label for="identifier">ID</label>
-            <input type="email" class="form-control id" id="identifier" placeholder="Email Address">
+            <div class="col-12">
+              <label for="identifier">ID</label>
+              <input type="email" class="form-control id" name="id" id="identifier" placeholder="Email Address" required>
+              <div class="invalid-tooltip">Enter valid Email.</div>
+            </div>
           </div>
           <div class="section-login-comp2 form-row">
-            <label for="password">Password</label>
-            <input type="password" class="form-control pw" id="password" placeholder="Password">
+            <div class="col-12">
+              <label for="password">Password</label>
+              <input type="password" class="form-control pw" name="pw" id="password" placeholder="Password" required>
+              <div class="invalid-tooltip">Enter your password.</div>
+            </div>
           </div>
           <div class="section-login-comp2 form-row form-check" id="Remembercheckbox">
-            <input type="checkbox" class="form-check-input" id="RememberCheck">
+            <input type="checkbox" class="form-check-input" name="Remember" id="RememberCheck">
             <label for="RememberCheck" class="form-check-label">Remember Email Address</label>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Sign in</button>
@@ -74,42 +78,42 @@
           </span>
         </div>
         <div class="form-row section-login-comp1">
-          <hr class="col-md-5"/>
+          <hr class="col-md-5 col-sm-4"/>
           <p>OR</p>
-          <hr class="col-md-5"/>
+          <hr class="col-md-5 col-sm-4"/>
         </div>
-        <a class="btn btn-info btn-block section-login-comp2" role="button" href="http://localhost/Beginner_Trainning1/register.php">Sign up with new account</a>
+        <a class="btn btn-info btn-block section-login-comp2" role="button" href="http://localhost/Beginner_Trainning1/register.html">Sign up with new account</a>
         <div class="form-row">
-          <div class="col-md-6">
-            <a class="btn btn-block section-login-comp2" style="background-color:#3b5998; color:#FFFFFF;" role="button" href="#">Sign up with Facebook</a>
+          <div class="col-6">
+            <a class="btn btn-block  section-login-comp2 btn-facebook" role="button" href="#">Sign up with Facebook</a>
           </div>
-          <div class="col-md-6">
-            <a class="btn btn-block section-login-comp2" style="background-color:#c32f10; color:#FFFFFF;" role="button" href="#">Sign up with Google+</a>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6">
-            <a class="btn btn-block section-login-comp2" style="background-color:#03cf5d; color:#FFFFFF;" role="button" href="#">Sign up with Naver</a>
-          </div>
-          <div class="col-md-6">
-            <a class="btn btn-block section-login-comp2" style="background-color:#fcce00; color:#FFFFFF;" role="button" href="#">Sign up with Kakao</a>
+          <div class="col-6">
+            <a class="btn btn-block  section-login-comp2 btn-googleplus" role="button" href="#">Sign up with Google+</a>
           </div>
         </div>
         <div class="form-row">
-          <div class="col-md-6">
-            <a class="btn btn-block section-login-comp2" style="background-color:#1da1f2; color:#FFFFFF;" role="button" href="#">Sign up with Twitter</a>
+          <div class="col-6">
+            <a class="btn btn-block  section-login-comp2 btn-naver" role="button" href="#">Sign up with Naver</a>
           </div>
-          <div class="col-md-6">
-            <a class="btn btn-block section-login-comp2" style="background-color:#175C8E; color:#FFFFFF;" role="button" href="#">Sign up with Koin</a>
+          <div class="col-6">
+            <a class="btn btn-block  section-login-comp2 btn-kakao" role="button" href="#">Sign up with Kakao</a>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-6">
+            <a class="btn btn-block  section-login-comp2 btn-twitter" role="button" href="#">Sign up with Twitter</a>
+          </div>
+          <div class="col-6">
+            <a class="btn btn-block  section-login-comp2 btn-koin" role="button" href="#">Sign up with Koin</a>
           </div>
         </div>
       </div>
     </div>
 
 
-   <nav class="nav nav-pills justify-content-center developer">
-     <a href="https://www.facebook.com/pedogunu" class="nav-item nav-link developer" text-decoration = none target="_blank">Developer's Facebook</a>
-     <a href="mailto:pedogunu@gmail.com" class="nav-item nav-link developer" target="_blank">Contact to Developer</a>
+    <nav class="row justify-content-center developer">
+      <a href="https://www.facebook.com/pedogunu" class="col-2" target="_blank">Developer's Facebook</a>
+      <a href="mailto:pedogunu@gmail.com" class="col-2" target="_blank">Contact to Developer</a>
     </nav>
 
     <!-- JavaScript 선택사항 -->

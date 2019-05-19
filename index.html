@@ -12,8 +12,8 @@
     <title>CSS Training.Sign In & Register</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="http://localhost/Beginner_Trainning1/index.php">World ACE</a>
+    <nav class="navbar navbar-expand-lg navbar-light NavbarBar">
+        <a class="navbar-brand" href="http://localhost/Beginner_Trainning1/index.html">World ACE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,29 +36,10 @@
                 Profile
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfile">
-                <?php
-                  if(1){
-                    echo '
-                      <span class="dropdown-item-text">Guest</span>
-                    ';
-                  } else {
-                    echo '<a class="dropdown-item-text" href="#">계정</a>';
-                  }
-                 ?>
+                <span class="dropdown-item-text">Guest</span>
                 <div class="dropdown-divider"></div>
-                <?php
-                  if(1){
-                    echo '
-                      <a class="dropdown-item" href="login.php">if you have a account, <strong>Sign in</strong></a>
-                      <a class="dropdown-item" href="register.php">Don\'t have a account? <strong>Sign up</strong></a>
-                    ';
-                  } else {
-                    echo '
-                      <a class="dropdown-item" href="#"><strong>Logout</strong></a>
-                    ';
-                  }
-
-                 ?>
+                <a class="dropdown-item" href="login.html">if you have a account, <strong>Sign in</strong></a>
+                <a class="dropdown-item" href="register.html">Don\'t have a account? <strong>Sign up</strong></a>
 
               </div>
             </li>
@@ -66,7 +47,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid intro">
+    <div class="container-fluid">
       <div class="bd">
         <div id="indexcarousel1" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -76,7 +57,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active indexcarousel">
-              <img src="http://localhost/Beginner_Trainning1/img/Wonbeen.png" class="d-block w-100" alt=".">
+            <img src="http://localhost/Beginner_Trainning1/img/Wonbeen.png" class="d-block w-100" alt="His evolution">
               <div class="carousel-caption d-none d-md-block">
                 <h2>Who is Choi Won-been?</h2>
                 <p>The World ACE, Choi Won-been</p>
@@ -110,9 +91,9 @@
     </div>
 
 
-   <nav class="nav nav-pills justify-content-center developer">
-     <a href="https://www.facebook.com/pedogunu" class="nav-item nav-link developer" text-decoration = none target="_blank">Developer's Facebook</a>
-     <a href="mailto:pedogunu@gmail.com" class="nav-item nav-link developer" target="_blank">Contact to Developer</a>
+   <nav class="row justify-content-center developer">
+     <a href="https://www.facebook.com/pedogunu" class="col-2" target="_blank">Developer's Facebook</a>
+     <a href="mailto:pedogunu@gmail.com" class="col-2" target="_blank">Contact to Developer</a>
     </nav>
 
     <!-- JavaScript 선택사항 -->
