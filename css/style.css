@@ -9,6 +9,7 @@ nav.developer{
 .developer > a{
   font-family:"나눔바른고딕";
   color:white;
+  font-size:13px;
   margin-left:30px;
   margin-right:30px;
 }
