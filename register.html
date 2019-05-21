@@ -79,7 +79,7 @@
 
         <form class="section-register-comp1 needs-validation" action="#" method="post">
           <div class="section-register-comp2 form-row">
-            <div class="col-lg-7 col-sm-12">
+            <div class="col-sm-12">
               <label for="identifier">ID</label>
               <div class="input-group">
                 <input type="email" class="form-control id" name="id" id="identifier" placeholder="Email Address" required>
@@ -87,7 +87,7 @@
                   <button class="btn btn-outline-secondary" type="button" id="idcheck">Check Overlap</button>
                 </div>
                 <div class="valid-tooltip">Cool!</div>
-                <div class="invalid-tooltip">Enter your Email.</div>
+                <div class="invalid-tooltip">It is not e-mail format</div>
               </div>
             </div>
           </div>
@@ -97,13 +97,13 @@
               <label for="password">Password</label>
               <input type="password" class="form-control pw" name="pw" id="password" placeholder="Password" required>
               <div class="valid-tooltip">Cool!</div>
-              <div class="invalid-tooltip">Enter your password.</div>
+              <div class="invalid-tooltip">Enter password.</div>
             </div>
             <div class="form-group col-6">
               <label for="password-check">Confirm Password</label>
               <input type="password" class="form-control pw-check"  name="pw-check" id="password-check" placeholder="Repeat Password" required>
               <div class="valid-tooltip">Cool!</div>
-              <div class="invalid-tooltip">Repeat your password.</div>
+              <div class="invalid-tooltip">Doesn't match password.</div>
             </div>
           </div>
           <div class="section-register-comp2 form-row">
@@ -111,13 +111,13 @@
               <label for="name-last">Last name</label>
               <input type="text" class="form-control" name="name-last" id="name-last" placeholder="Last name" required>
               <div class="valid-tooltip">That's nice!</div>
-              <div class="invalid-tooltip">Enter your Last name.</div>
+              <div class="invalid-tooltip">Enter Last name.</div>
             </div>
             <div class="form-group col-5">
               <label for="name-first">First name</label>
               <input type="text" class="form-control" name="name-first" id="name-first" placeholder="First name" required>
               <div class="valid-tooltip">That's nice!</div>
-              <div class="invalid-tooltip">Enter your First name.</div>
+              <div class="invalid-tooltip">Enter First name.</div>
             </div>
             <div class="form-group col-2">
               <label for="gender">Gender</label>
@@ -126,13 +126,8 @@
                 <option value="Female">F</option>
               </select>
               <div class="valid-tooltip">That's nice!</div>
-              <div class="invalid-tooltip">Select your gender.</div>
+              <div class="invalid-tooltip">Select gender.</div>
             </div>
-          </div>
-          <div class="form-row section-register-comp2">
-            <hr class="col-lg-5 col-4"/>
-            <p>Optional</p>
-            <hr class="col-lg-5 col-4"/>
           </div>
           <div class="form-row">
             <div class="form-group  col-md-5 col-12">
@@ -144,23 +139,15 @@
                 <input type="text" class="form-control" name="phone" id="phonenumber" placeholder="Your Phone number">
               </div>
             </div>
-            <div class="form-group col-md-3 col-6">
-              <label for="major-main">Main-Major</label>
-              <select class="form-control" name="major-main" id="major-main">
-                <option value="cse">컴퓨터공학부</option>
-                <option value="mecha">메카트로닉스학부</option>
-                <option value="me">기계공학부</option>
-                <option value="ite">전기전자통신학부</option>
-                <option value="emc">에너지신소재화학공학부</option>
-                <option value="im">산업경영학부</option>
-                <option value="ide">디자인건축공학부</option>
-              </select>
-            </div>
-
             <div class="form-group col-md-4 col-6">
               <label for="student-id">Student ID</label>
               <input type="text" class="form-control" name="id-student" id="student-id" placeholder="ex)2019136077">
             </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="major-main">Main-Major</label>
+              <input class="form-control" name="major-main" id="major-main" readonly>
+            </div>
+
           </div>
           <div class="section-login-comp2 form-row form-check text-center">
             <input type="checkbox" class="form-check-input" id="TermCheck" required>
