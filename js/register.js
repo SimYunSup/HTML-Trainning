@@ -8,21 +8,46 @@ const phonenum = document.querySelector('.phone-number');
 const major = document.querySelector('.major');
 const studentnum = document.querySelector('.student-number');
 const submit = document.querySelector('.signup');
-const valid_id = document.querySelector('.validity-id')
+
+const valid_id = document.querySelector('.valid-id');
+const invalid_id = document.querySelector('.invalid-id');
+const valid_pw = document.querySelector('.valid-pw');
+const invalid_pw = document.querySelector('.invalid-pw');
+const valid_lastname = document.querySelector('.valid-lastname');
+const invalid_lastname = document.querySelector('.invalid-lastname');
 
 /*innerHTML -> firstchild*/
 id.addEventListener('input', function(){
     let standard_id = /[a-zA-Z0-9]*@[a-zA-Z0-9]*\.([a-zA-Z0-9]*\.[a-zA-Z0-9]*|[a-zA-Z0-9]*)/;
     if(standard_id.test(id.value)){
-        valid_id.classList.remove("invalid");
-        valid_id.classList.add("valid");
-        valid_id.firstChild.nodeValue = "Cool!";
+        invalid_id.classList.add('invisible');
+        valid_id.classList.remove('invisible');
     } else {
-        valid_id.classList.remove("valid");
-        valid_id.classList.add("invalid");
-        valid_id.firstChild.nodeValue = "Enter valid Email Address";
+        invalid_id.classList.remove("invisible");
+        valid_id.classList.add("invisible");
     }
 });
+
+pw.addEventListener('input', function(){
+    if(isNaN(pw.value)){
+        invalid_pw.classList.add('invisible');
+        valid_pw.classList.remove('invisible');
+    } else {
+        invalid_pw.classList.remove("invisible");
+        valid_pw.classList.add("invisible");
+    }
+});
+
+lastname.addEventListener('input', function(){
+    if(isNaN(lastname.value)){
+        invalid_lastname.classList.add('invisible');
+        valid_lastname.classList.remove('invisible');
+    } else {
+        invalid_lastname.classList.remove("invisible");
+        valid_lastname.classList.add("invisible");
+    }
+});
+
 studentnum.addEventListener('input',function(){
     if(!(studentnum.value.length > 9 && studentnum.value.length < 11)){
         major.innerHTML = '';
@@ -58,15 +83,21 @@ studentnum.addEventListener('input',function(){
 });
 
 submit.addEventListener('submit', function(){
-    if(valid_id.classList.contains("invalid")){
+
+
+
+
+
+
+    if(invalid_id.classList.contains("invisible")){
         alert("Enter Email Address");
         id.focus();
         return false;
-    } else if (valid_pw.classList.contains("invalid")){
+    } else if (invalid_pw.classList.contains("invisible")){
         alert("Enter Password");
         pw.focus();
         return false;
-    } else if (valid_pwch.classList.contains("invalid")){
+    } else if (invalid_pwch.classList.contains("invisible")){
         alert("Doesn't match Password and Confirm Password");
         pwch.focus();
         return false;

@@ -1,10 +1,13 @@
 .invalid {
     color:red;
     font-size:13px;
-    margin-top:-10px;
+    margin-left:10px;
 }
 .valid {
     color:green;
     font-size:13px;
-    margin-top:-10px;
+    margin-left:10px;
+}
+.invisible{
+    display:none;
 }
