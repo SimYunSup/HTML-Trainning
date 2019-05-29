@@ -7,7 +7,7 @@ const gender = document.querySelector('.gender');
 const phonenum = document.querySelector('.phone-number');
 const major = document.querySelector('.major');
 const studentnum = document.querySelector('.student-number');
-const submit = document.querySelector('.form-register');
+const form = document.querySelector('.form-register');
 const check_term = document.querySelector('.check-term');
 
 const valid_id = document.querySelector('.valid-id');
@@ -142,7 +142,7 @@ check_term.addEventListener('click', function(){
     }
 });
 
-submit.onsubmit = function (event) {
+form.onsubmit = function (event) {
     if (!(id.value)) {
         valid_id.classList.add('invisible');
         invalid_id.classList.remove('invisible');
@@ -180,30 +180,39 @@ submit.onsubmit = function (event) {
     }
     if (valid_id.classList.contains("invisible")) {
         alert("Enter Email Address.");
+        id.focus();
         return false;
     } else if (valid_pw.classList.contains("invisible")) {
         alert("Enter Password.");
+        pw.focus();
         return false;
     } else if (valid_pwch.classList.contains("invisible")) {
         alert("Doesn't match Password and Confirm Password.");
+        pwch.focus();
         return false;
     } else if (valid_lastname.classList.contains("invisible")) {
         alert("Enter your Lastname.");
+        lastname.focus();
         return false;
     } else if (valid_firstname.classList.contains("invisible")) {
         alert("Enter your Firstname.");
+        firstname.focus();
         return false;
     } else if (valid_gender.classList.contains("invisible")) {
         alert("Select your gender.");
+        gender.focus();
         return false;
     } else if (valid_phonenum.classList.contains("invisible")) {
         alert("Enter your Phone number.");
+        phonenum.focus();
         return false;
     } else if (valid_studentnum.classList.contains("invisible")) {
         alert("Enter your Student-ID");
+        studentnum.focus();
         return false;
     } else if (!(invalid_term.classList.contains("invisible"))) {
         alert("Agree Term of Services and Conditions");
+        check_term.focus();
         return false;
     } else {
         alert("Register successfully");
