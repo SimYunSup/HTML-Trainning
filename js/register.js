@@ -8,102 +8,102 @@ const phonenum = document.querySelector('.phone-number');
 const major = document.querySelector('.major');
 const studentnum = document.querySelector('.student-number');
 const form = document.querySelector('.form-register');
-const check_term = document.querySelector('.check-term');
+const checkTerm = document.querySelector('.check-term');
 
-const valid_id = document.querySelector('.valid-id');
-const invalid_id = document.querySelector('.invalid-id');
-const valid_pw = document.querySelector('.valid-pw');
-const invalid_pw = document.querySelector('.invalid-pw');
-const valid_pwch = document.querySelector('.valid-pwch');
-const invalid_pwch = document.querySelector('.invalid-pwch');
-const valid_lastname = document.querySelector('.valid-lastname');
-const invalid_lastname = document.querySelector('.invalid-lastname');
-const valid_firstname = document.querySelector('.valid-firstname');
-const invalid_firstname = document.querySelector('.invalid-firstname');
-const valid_gender = document.querySelector('.valid-gender');
-const invalid_gender = document.querySelector('.invalid-gender');
-const valid_phonenum = document.querySelector('.valid-phonenum');
-const invalid_phonenum = document.querySelector('.invalid-phonenum');
-const valid_studentnum = document.querySelector('.valid-studentnum');
-const invalid_studnetnum = document.querySelector('.invalid-studentnum');
-const invalid_term = document.querySelector('.invalid-term');
+const idValid = document.querySelector('.valid-id');
+const idInvalid = document.querySelector('.invalid-id');
+const pwValid = document.querySelector('.valid-pw');
+const pwInvalid = document.querySelector('.invalid-pw');
+const pwChValid = document.querySelector('.valid-pwch');
+const pwChInvalid = document.querySelector('.invalid-pwch');
+const lastnameValid = document.querySelector('.valid-lastname');
+const lastnameInvalid = document.querySelector('.invalid-lastname');
+const firstnameValid = document.querySelector('.valid-firstname');
+const firstnameInvalid = document.querySelector('.invalid-firstname');
+const genderValid = document.querySelector('.valid-gender');
+const genderInvalid = document.querySelector('.invalid-gender');
+const phoneNumValid = document.querySelector('.valid-phonenum');
+const phoneNumInvalid = document.querySelector('.invalid-phonenum');
+const studentNumValid = document.querySelector('.valid-studentnum');
+const studentNumInvalid = document.querySelector('.invalid-studentnum');
+const termInvalid = document.querySelector('.invalid-term');
 
 /*innerHTML -> firstchild*/
-id.addEventListener('input', function () {
+id.addEventListener('input', () => {
     let standard_id = /[a-zA-Z0-9]*@[a-zA-Z0-9]*\.([a-zA-Z0-9]*\.[a-zA-Z0-9]*|[a-zA-Z0-9]*)/;
     if (standard_id.test(id.value)) {
-        invalid_id.classList.add('invisible');
-        valid_id.classList.remove('invisible');
+        idInvalid.classList.add('invisible');
+        idValid.classList.remove('invisible');
     } else {
-        invalid_id.classList.remove("invisible");
-        valid_id.classList.add("invisible");
+        idInvalid.classList.remove("invisible");
+        idValid.classList.add("invisible");
     }
 });
 
-pw.addEventListener('input', function () {
-    if (isNaN(pw.value)) {
-        invalid_pw.classList.add('invisible');
-        valid_pw.classList.remove('invisible');
+pw.addEventListener('input', () => {
+    if (!(pw.value == "")) {
+        pwInvalid.classList.add('invisible');
+        pwValid.classList.remove('invisible');
     } else {
-        invalid_pw.classList.remove("invisible");
-        valid_pw.classList.add("invisible");
+        pwInvalid.classList.remove("invisible");
+        pwValid.classList.add("invisible");
     }
 });
 
-pwch.addEventListener('input', function () {
+pwch.addEventListener('input', () => {
     if (pw.value == pwch.value) {
-        invalid_pwch.classList.add('invisible');
-        valid_pwch.classList.remove('invisible');
+        pwChInvalid.classList.add('invisible');
+        pwChValid.classList.remove('invisible');
     } else {
-        invalid_pwch.classList.remove('invisible');
-        valid_pwch.classList.add('invisible');
+        pwChInvalid.classList.remove('invisible');
+        pwChValid.classList.add('invisible');
     }
 });
 
-lastname.addEventListener('input', function () {
-    if (isNaN(lastname.value)) {
-        invalid_lastname.classList.add('invisible');
-        valid_lastname.classList.remove('invisible');
+lastname.addEventListener('input', () => {
+    if (!(lastname.value == "")) {
+        lastnameInvalid.classList.add('invisible');
+        lastnameValid.classList.remove('invisible');
     } else {
-        invalid_lastname.classList.remove("invisible");
-        valid_lastname.classList.add("invisible");
+        lastnameInvalid.classList.remove("invisible");
+        lastnameValid.classList.add("invisible");
     }
 });
 
-firstname.addEventListener('input', function () {
-    if (isNaN(firstname.value)) {
-        invalid_firstname.classList.add('invisible');
-        valid_firstname.classList.remove('invisible');
+firstname.addEventListener('input', () => {
+    if (!(firstname.value == "")) {
+        firstnameInvalid.classList.add('invisible');
+        firstnameValid.classList.remove('invisible');
     } else {
-        invalid_firstname.classList.remove("invisible");
-        valid_firstname.classList.add("invisible");
+        firstnameInvalid.classList.remove("invisible");
+        firstnameValid.classList.add("invisible");
     }
 });
 
-gender.addEventListener('change', function () {
-    invalid_gender.classList.add('invisible');
-    valid_gender.classList.remove('invisible');
+gender.addEventListener('change', () => {
+    genderInvalid.classList.add('invisible');
+    genderValid.classList.remove('invisible');
 });
 
-phonenum.addEventListener('input', function () {
+phonenum.addEventListener('input', () => {
     let standard_phone = /^01\d{9}/;
     if (standard_phone.test(phonenum.value)) {
-        invalid_phonenum.classList.add('invisible');
-        valid_phonenum.classList.remove('invisible');
+        phoneNumInvalid.classList.add('invisible');
+        phoneNumValid.classList.remove('invisible');
     } else {
-        invalid_phonenum.classList.remove("invisible");
-        valid_phonenum.classList.add("invisible");
+        phoneNumInvalid.classList.remove("invisible");
+        phoneNumValid.classList.add("invisible");
     }
 });
 
-studentnum.addEventListener('input', function () {
+studentnum.addEventListener('input', () => {
     if (!(studentnum.value.length > 9 && studentnum.value.length < 11)) {
-        valid_studentnum.classList.add('invisible');
-        invalid_studnetnum.classList.remove('invisible');
+        studentNumValid.classList.add('invisible');
+        studentNumInvalid.classList.remove('invisible');
         major.textContent = "";
     } else {
-        valid_studentnum.classList.remove('invisible');
-        invalid_studnetnum.classList.add('invisible');
+        studentNumValid.classList.remove('invisible');
+        studentNumInvalid.classList.add('invisible');
         let standard_st = /\d{4}(\d{3})\d{3}/;
         let majornum = standard_st.exec(studentnum.value)[1];
         switch (majornum) {
@@ -134,85 +134,85 @@ studentnum.addEventListener('input', function () {
     }
 });
 
-check_term.addEventListener('click', function(){
-    if (check_term.checked == true) {
-        invalid_term.classList.add('invisible');
+checkTerm.addEventListener('click', () => {
+    if (checkTerm.checked == true) {
+        termInvalid.classList.add('invisible');
     } else {
-        invalid_term.classList.remove('invisible');
+        termInvalid.classList.remove('invisible');
     }
 });
 
-form.onsubmit = function (event) {
+form.onsubmit = () => {
     if (!(id.value)) {
-        valid_id.classList.add('invisible');
-        invalid_id.classList.remove('invisible');
+        idValid.classList.add('invisible');
+        idInvalid.classList.remove('invisible');
     }
     if (!(pw.value)) {
-        valid_pw.classList.add('invisible');
-        invalid_pw.classList.remove('invisible');
+        pwValid.classList.add('invisible');
+        pwInvalid.classList.remove('invisible');
     }
     if (!(pwch.value)) {
-        valid_pwch.classList.add('invisible');
-        invalid_pwch.classList.remove('invisible');
+        pwChValid.classList.add('invisible');
+        pwChInvalid.classList.remove('invisible');
     }
     if (!(lastname.value)) {
-        valid_lastname.classList.add('invisible');
-        invalid_lastname.classList.remove('invisible');
+        lastnameValid.classList.add('invisible');
+        lastnameInvalid.classList.remove('invisible');
     }
     if (!(firstname.value)) {
-        valid_firstname.classList.add('invisible');
-        invalid_firstname.classList.remove('invisible');
+        firstnameValid.classList.add('invisible');
+        firstnameInvalid.classList.remove('invisible');
     }
     if (!(phonenum.value)) {
-        valid_phonenum.classList.add('invisible');
-        invalid_phonenum.classList.remove('invisible');
+        phoneNumValid.classList.add('invisible');
+        phoneNumInvalid.classList.remove('invisible');
     }
     if (!(studentnum.value)) {
-        valid_studentnum.classList.add('invisible');
-        invalid_studnetnum.classList.remove('invisible');
+        studentNumValid.classList.add('invisible');
+        studentNumInvalid.classList.remove('invisible');
     }
     if (gender.options[gender.selectedIndex].text == 'Choose') {
-        valid_gender.classList.add('invisible');
-        invalid_gender.classList.remove('invisible');
+        genderValid.classList.add('invisible');
+        genderInvalid.classList.remove('invisible');
     }
-    if (check_term.checked != true) {
-        invalid_term.classList.remove('invisible');
+    if (checkTerm.checked != true) {
+        termInvalid.classList.remove('invisible');
     }
-    if (valid_id.classList.contains("invisible")) {
+    if (idValid.classList.contains("invisible")) {
         alert("Enter Email Address.");
         id.focus();
         return false;
-    } else if (valid_pw.classList.contains("invisible")) {
+    } else if (pwValid.classList.contains("invisible")) {
         alert("Enter Password.");
         pw.focus();
         return false;
-    } else if (valid_pwch.classList.contains("invisible")) {
+    } else if (pwChValid.classList.contains("invisible")) {
         alert("Doesn't match Password and Confirm Password.");
         pwch.focus();
         return false;
-    } else if (valid_lastname.classList.contains("invisible")) {
+    } else if (lastnameValid.classList.contains("invisible")) {
         alert("Enter your Lastname.");
         lastname.focus();
         return false;
-    } else if (valid_firstname.classList.contains("invisible")) {
+    } else if (firstnameValid.classList.contains("invisible")) {
         alert("Enter your Firstname.");
         firstname.focus();
         return false;
-    } else if (valid_gender.classList.contains("invisible")) {
+    } else if (genderValid.classList.contains("invisible")) {
         alert("Select your gender.");
         gender.focus();
         return false;
-    } else if (valid_phonenum.classList.contains("invisible")) {
+    } else if (phoneNumValid.classList.contains("invisible")) {
         alert("Enter your Phone number.");
         phonenum.focus();
         return false;
-    } else if (valid_studentnum.classList.contains("invisible")) {
+    } else if (studentNumValid.classList.contains("invisible")) {
         alert("Enter your Student-ID");
         studentnum.focus();
         return false;
-    } else if (!(invalid_term.classList.contains("invisible"))) {
+    } else if (!(termInvalid.classList.contains("invisible"))) {
         alert("Agree Term of Services and Conditions");
-        check_term.focus();
+        checkTerm.focus();
         return false;
     } else {
         alert("Register successfully");

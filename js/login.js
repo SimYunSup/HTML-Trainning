@@ -14,7 +14,7 @@ id.addEventListener('input', function () {
 });
 
 pw.addEventListener('input', function () {
-    if (isNaN(pw.value)) {
+    if (pw.value = "") {
         invalid_pw.classList.add('invisible');
     } else {
         invalid_pw.classList.remove("invisible");

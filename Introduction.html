@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light NavbarBar">
-        <a class="navbar-brand" href="http://localhost/Beginner_Trainning1/index.html">World ACE</a>
+        <a class="navbar-brand" href="./index.html">World ACE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,10 +25,10 @@
               <a class="nav-link active" href="#">Introduction</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/Beginner_Trainning1/ability.html">ability</a>
+              <a class="nav-link" href="./ability.html">ability</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/Beginner_Trainning1/friendship.html">friendship</a>
+              <a class="nav-link" href="./friendship.html">friendship</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -36,10 +36,13 @@
               <a class="nav-link dropdown-toggle" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Profile
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfile"><span class="dropdown-item-text">Guest</span>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarProfile">
+                <span class="dropdown-item-text user-id">Guest</span>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.html">if you have a account, <strong>Sign in</strong></a>
-                <a class="dropdown-item" href="register.html">Don't have a account? <strong>Sign up</strong></a>
+                <div class="nav-login"><a class="dropdown-item" href="login.html">if you have a account, <strong>Sign in</strong></a></div>
+                <div class="nav-register"><a class="dropdown-item" href="register.html">Don't have a account? <strong>Sign up</strong></a></div>
+                <div class="nav-logout"><a class="dropdown-item" href="index.html">If you want Logout, <strong>Sign
+                  out</strong></a></div>
               </div>
             </li>
           </ul>
@@ -49,7 +52,7 @@
 
     <div class="container-fluid intro">
       <h1 class="Display-1 intro-plain">Who is Choi Won-been?</h1>
-      <img src="http://localhost/Beginner_Trainning1/img/Wonbeen.png" class="intro-img" alt="His evolution">
+      <img src="./img/Wonbeen.png" class="intro-img" alt="His evolution">
       <p class="intro-underimg">This picture shows his evolution.</p>
       <p class="intro-plain">He is the <strong>ACE</strong> of BCSD lab Beginner for Front-end in Q2 2019.</p>
       <p class="intro-plain">He is called 'Wonbeen-go-dong of magic'.</p>
@@ -67,5 +70,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/userInfo.js"></script>
   </body>
 </html>

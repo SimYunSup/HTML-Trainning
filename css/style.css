@@ -126,3 +126,7 @@ a.btn-kakao{
   background-color:#fcce00;
   color:#FFFFFF;
 }
+
+.invisible{
+  display:none;
+}
