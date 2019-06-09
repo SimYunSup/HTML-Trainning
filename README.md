@@ -55,3 +55,12 @@
 		    - pw input : 패스워드
 		    - login button : **로그인 기능**
 			- pw 입력 창에 커서가 있고(선택되어 있고) enter 입력 시 로그인 버튼 눌리는 이벤트 등록
+- Web Storage Trainning (cookie trainning)
+>>
+	- 로그인 버튼
+		- 로그인 버튼 클릭 시 로그인을 시도한 ID를 모든 스토리지(cookie, session storage, local storage)에 저장
+		- cookie의 expiretime은 72시간으로 한다.
+		- 개발자도구 > Application 의 각 스토리지 스크린샷 캡쳐 
+
+	- 로그아웃 버튼
+		- 현재 저장된 모든 스토리지 초기화
