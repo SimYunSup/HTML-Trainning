@@ -97,14 +97,15 @@ phonenum.addEventListener('input', () => {
 });
 
 studentnum.addEventListener('input', () => {
-    if (!(studentnum.value.length > 9 && studentnum.value.length < 11)) {
+    let standard_st = /\d{4}(\d{3})\d{3}/;
+    if (!(studentnum.value.length > 9 && studentnum.value.length < 11) || !(standard_st.exec(studentnum.value))) {
         studentNumValid.classList.add('invisible');
         studentNumInvalid.classList.remove('invisible');
         major.textContent = "";
     } else {
         studentNumValid.classList.remove('invisible');
         studentNumInvalid.classList.add('invisible');
-        let standard_st = /\d{4}(\d{3})\d{3}/;
+
         let majornum = standard_st.exec(studentnum.value)[1];
         switch (majornum) {
             case '120':

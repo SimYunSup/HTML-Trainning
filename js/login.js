@@ -45,7 +45,7 @@ form.onsubmit = function () {
 
 
 pw.addEventListener('keypress', function () {
-    if (!(isNaN(id.value) || isNaN(pw.value)))
+    if (!(id.value=="" || pw.value==""))
         if (event.keyCode == 13) {
             form.submit();
         }
